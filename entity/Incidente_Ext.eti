@@ -26,7 +26,7 @@
       value="40"/>
   </column>
   <column
-    name="CostoReposicion"
+    name="MontoCobertura"
     nullok="true"
     type="decimal">
     <columnParam
@@ -48,4 +48,8 @@
     name="Coverable"
     nullok="true"
     type="typekey"></column>
+  <foreignkey
+    fkentity="ABContact"
+    name="ABContactId"
+    nullok="true"/>
 </entity>
