@@ -27,7 +27,7 @@
       value="40"/>
   </column>
   <column
-    name="CostoReposicion"
+    name="MontoCobertura"
     nullok="true"
     type="decimal">
     <columnParam
@@ -52,5 +52,13 @@
   <typekey
     name="Coverable"
     nullok="true"
+<<<<<<< HEAD:extensions/entity/Incidente_Ext.eti
     typelist="CoverableType"/>
+=======
+    type="typekey"></column>
+  <foreignkey
+    fkentity="ABContact"
+    name="ABContactId"
+    nullok="true"/>
+>>>>>>> 4cf9549e6d8c2543f1884017bea06eb239b074dd:entity/Incidente_Ext.eti
 </entity>
