@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <entity
-  final="false"
   xmlns="http://guidewire.com/datamodel"
   entity="Coverable_Ext"
   table="coverable_ext"
-  type="retireable">
+  type="retireable"
+  final="false">
   <column
     name="CostoReposicion"
     nullok="true"
@@ -28,8 +28,8 @@
     name="Adquisicion"
     nullok="true"
     type="dateonly"/>
-  <column
-    name="TipoDeCoverable"
-    nullok="true"
-    type="typekey"/>
+  <foreignkey
+    fkentity="Incidente_Ext"
+    name="FK_Incidente"
+    nullok="true"/>
 </entity>

@@ -27,7 +27,7 @@
       value="40"/>
   </column>
   <column
-    name="CostoReposicion"
+    name="MontoCobertura"
     nullok="true"
     type="decimal">
     <columnParam
@@ -45,12 +45,16 @@
       name="size"
       value="40"/>
   </column>
+  <column
+    name="idIncidente"
+    nullok="true"
+    type="integer"/>
+  <onetoone
+    fkentity="Coverable_Ext"
+    name="Coverable"
+    nullok="true"/>
   <foreignkey
     fkentity="ABContact"
-    name="ABContactId"
+    name="FK_Contacto"
     nullok="true"/>
-  <typekey
-    name="Coverable"
-    nullok="true"
-    typelist="CoverableType"/>
 </entity>

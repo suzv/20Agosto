@@ -35,18 +35,6 @@
       name="encryption"
       value="true"/>
   </column-override>
-  <column-override
-    desc="Fax number associated with the contact."
-    name="FaxPhone"
-    nullok="true"
-    type="phone">
-    <columnParam
-      name="phonecountrycodeProperty"
-      value="FaxPhoneCountry"/>
-    <columnParam
-      name="extensionProperty"
-      value="FaxPhoneExtension"/>
-  </column-override>
   <column
     default="false"
     desc="Has W-9 form been received"
@@ -189,29 +177,6 @@
       name="size"
       value="40"/>
   </column>
-  <column
-    name="FraudInvestigationNum_Ext"
-    nullok="true"
-    type="integer"/>
-  <column
-    name="LastCourtesyContact_Ext"
-    nullok="true"
-    type="datetime"/>
-  <column
-    name="CustomerRating_Ext"
-    nullok="true"
-    type="decimal">
-    <columnParam
-      name="scale"
-      value="1"/>
-    <columnParam
-      name="precision"
-      value="4"/>
-  </column>
-  <column
-    name="IsStrategicPartner_Ext"
-    nullok="true"
-    type="bit"/>
   <array
     arrayentity="Incidente_Ext"
     name="Incidentes"/>
