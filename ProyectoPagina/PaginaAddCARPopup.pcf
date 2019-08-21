@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../pcf.xsd">
+  <Popup
+    id="PaginaAddCARPopup"
+    title="&quot;PopupAdd&quot;">
+    <Variable
+      name="anABContact"
+      type="ABContact"/>
+    <Variable
+      name="anIncidente"
+      type="Incidente_Ext"/>
+    <Screen>
+      <Toolbar>
+        <EditButtons
+          cancelVisible="false"
+          editVisible="false"/>
+      </Toolbar>
+      <DetailViewPanel>
+        <InputColumn>
+          <Label
+            label="&quot;New Incident&quot;"/>
+          <DateInput
+            editable="true"
+            id="DateIncident"
+            label="&quot;Date Incident&quot;"
+            value="anIncidente.FechaIncidente"/>
+          <TextInput
+            editable="true"
+            id="IncidentLocation"
+            label="&quot;Incident Location&quot;"
+            value="anIncidente.Ubicacion"/>
+          <MonetaryAmountInput
+            editable="true"
+            id="AmountCovered"
+            label="&quot;Amount Covered&quot;"
+            value="anIncidente.MontoCobertura"
+            valueType="java.math.BigDecimal"/>
+          <TextInput
+            editable="true"
+            id="Observation"
+            label="&quot;Observation&quot;"
+            value="anIncidente.Observaciones"/>
+          <TextInput
+            editable="true"
+            id="Incidenttype"
+            label="&quot;Incident Type&quot;"
+            value="anIncidente.TipoIncidente"/>
+          <Label
+            label="&quot;AutoCar&quot;"/>
+          <TextInput
+            editable="true"
+            id="CarLicense"
+            label="&quot;Car License Plate&quot;"
+            value="(anIncidente.Coverable as Auto_Ext).Patente"/>
+          <TextInput
+            editable="true"
+            id="idModel"
+            label="&quot;Model&quot;"
+            value="(anIncidente.Coverable as Auto_Ext).Modelo"/>
+          <TextInput
+            editable="true"
+            id="idYear"
+            label="&quot;Year&quot;"
+            value="(anIncidente.Coverable as Auto_Ext).Ano"
+            valueType="java.lang.Integer"/>
+          <TextInput
+            editable="true"
+            id="idColor"
+            label="&quot;Colors&quot;"
+            value="(anIncidente.Coverable as Auto_Ext).Color"/>
+          <TextInput
+            id="idMarca"
+            label="&quot;Brand&quot;"
+            value="(anIncidente.Coverable as Auto_Ext).Marca"/>
+          <InputDivider/>
+        </InputColumn>
+      </DetailViewPanel>
+    </Screen>
+  </Popup>
+</PCF>
