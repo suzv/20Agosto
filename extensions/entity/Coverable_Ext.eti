@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<entity
+  final="false"
+  xmlns="http://guidewire.com/datamodel"
+  entity="Coverable_Ext"
+  table="coverable_ext"
+  type="retireable">
+  <column
+    name="CostoReposicion"
+    nullok="true"
+    type="decimal">
+    <columnParam
+      name="precision"
+      value="10"/>
+    <columnParam
+      name="scale"
+      value="2"/>
+  </column>
+  <column
+    name="UbicacionAsociada"
+    nullok="true"
+    type="varchar">
+    <columnParam
+      name="size"
+      value="200"/>
+  </column>
+  <column
+    name="Adquisicion"
+    nullok="true"
+    type="dateonly"/>
+  <column
+    name="TipoDeCoverable"
+    nullok="true"
+    type="typekey"/>
+</entity>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <entity
+  exportable="true"
   xmlns="http://guidewire.com/datamodel"
   entity="Incidente_Ext"
   table="incidente_ext"
@@ -44,8 +45,12 @@
       name="size"
       value="40"/>
   </column>
-  <column
+  <foreignkey
+    fkentity="ABContact"
+    name="ABContactId"
+    nullok="true"/>
+  <typekey
     name="Coverable"
     nullok="true"
-    type="typekey"></column>
+    typelist="CoverableType"/>
 </entity>
