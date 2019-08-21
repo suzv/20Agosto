@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <entity
+  exportable="true"
   xmlns="http://guidewire.com/datamodel"
   entity="Incidente_Ext"
   table="incidente_ext"
@@ -45,11 +46,15 @@
       value="40"/>
   </column>
   <column
-    name="Coverable"
+    name="idIncidente"
     nullok="true"
-    type="typekey"></column>
+    type="integer"/>
+  <onetoone
+    fkentity="Coverable_Ext"
+    name="Coverable"
+    nullok="true"/>
   <foreignkey
     fkentity="ABContact"
-    name="ABContactId"
+    name="Contacto"
     nullok="true"/>
 </entity>

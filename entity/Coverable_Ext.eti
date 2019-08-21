@@ -28,4 +28,8 @@
     name="Adquisicion"
     nullok="true"
     type="dateonly"/>
+  <foreignkey
+    fkentity="Incidente_Ext"
+    name="FK_Incidente"
+    nullok="true"/>
 </entity>

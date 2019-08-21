@@ -170,34 +170,14 @@
     nullok="true"
     typelist="ContactTier"/>
   <column
-    name="WebAddress_EXT"
+    name="WebAddress_Ext"
     nullok="true"
     type="varchar">
     <columnParam
       name="size"
       value="40"/>
   </column>
-  <column
-    name="FraudInvestigationNum_Ext"
-    nullok="true"
-    type="integer"></column>
-  <column
-    name="LastCourtesyContact_Ext"
-    nullok="true"
-    type="datetime"></column>
-  <column
-    name="CustomerRating_Ext"
-    nullok="true"
-    type="decimal">
-    <columnParam
-      name="precision"
-      value="4"/>
-    <columnParam
-      name="scale"
-      value="1"/>
-  </column>
-  <column
-    name="IsStrategicPartner_Ext"
-    nullok="true"
-    type="bit"/>
+  <array
+    arrayentity="Incidente_Ext"
+    name="Incidentes"/>
 </extension>
